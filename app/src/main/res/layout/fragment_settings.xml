@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsFragment">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager Settings"
+        android:textColor="@color/logo_background"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/lock_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin"
+        android:layout_marginEnd="@dimen/edit_text_margin"
+        android:stepSize="5"
+        android:valueFrom="10"
+        android:valueTo="60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lock_time_text" />
+
+    <TextView
+        android:id="@+id/lock_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin"
+        android:layout_marginTop="@dimen/edit_text_margin"
+        android:text="Lock Time (minute)"
+        android:textColor="@color/logo_background"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/registered_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin"
+        android:layout_marginTop="@dimen/edit_text_margin"
+        android:text="Registered Phone Number"
+        android:textColor="@color/logo_background"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lock_slider" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registered_phone_text_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:hint="Phone Number"
+        app:boxCornerRadiusBottomStart="@dimen/edit_text_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/edit_text_corner_radius"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toStartOf="@+id/edit_registered_number_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registered_phone_title"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registered_phone_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_registered_number_button"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="@dimen/edit_text_margin"
+        android:background="@color/button_background"
+        app:layout_constraintBottom_toBottomOf="@+id/registered_phone_text_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registered_phone_text_layout">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_edit_24" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/save_settings_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/edit_text_margin"
+        android:background="@drawable/button_background"
+        android:enabled="false"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registered_phone_text_layout" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/edit_text_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_start_round_corners"
+        android:enabled="false"
+        android:text="RESET"
+        app:layout_constraintEnd_toStartOf="@+id/lock_session_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_settings_button" />
+
+    <Button
+        android:id="@+id/lock_session_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/edit_text_margin"
+        android:background="@drawable/button_background_end_round_corners"
+        android:drawableEnd="@drawable/ic_baseline_lock_24"
+        android:text="Lock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/reset_button"
+        app:layout_constraintTop_toBottomOf="@+id/save_settings_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

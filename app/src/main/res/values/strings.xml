@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Password Manager</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in_button_first_text">GET OTP</string>
+    <string name="disc_bullet"> \u25CF</string>
+    <string name="information">\u25CF Password Manager uses Phone number for user authentication.\n\u25CF Make sure sim is inserted in the same device.\n \u25CF Once Password Manager locked will require OTP verification to unlock.</string>
+    <string name="card_username">Username</string>
+    <string name="card_password">Password</string>
+    <string name="default_password">ENCRYPTED#PASSWORD?</string>
+    <dimen name="edit_text_margin">30dp</dimen>
+    <dimen name="edit_text_corner_radius">20dp</dimen>
+    <dimen name="copy_button_size">30dp</dimen>
+</resources>

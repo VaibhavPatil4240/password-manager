@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "743580136893",
+    "project_id": "passwordmanager-b3c00",
+    "storage_bucket": "passwordmanager-b3c00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743580136893:android:2078b1459bf7ed9a460ed4",
+        "android_client_info": {
+          "package_name": "com.example.otp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743580136893-s79bhodvd96v6np1fqq0n0703pcobetn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.otp",
+            "certificate_hash": "c4e604a43bf13d73aa8d80d1ca2c837b1c9930d4"
+          }
+        },
+        {
+          "client_id": "743580136893-0vsge3tf8jq0avcrfkmp63sob332tpc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC75JNRXAhlbrmGhlVXV7Hnd_ayCGpKhCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743580136893-0vsge3tf8jq0avcrfkmp63sob332tpc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743580136893:android:f2519fa24c2e7bce460ed4",
+        "android_client_info": {
+          "package_name": "com.example.passwordmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743580136893-0vsge3tf8jq0avcrfkmp63sob332tpc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC75JNRXAhlbrmGhlVXV7Hnd_ayCGpKhCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743580136893-0vsge3tf8jq0avcrfkmp63sob332tpc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
