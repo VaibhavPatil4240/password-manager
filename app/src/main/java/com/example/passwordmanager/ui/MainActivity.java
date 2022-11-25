@@ -127,4 +127,8 @@ public class MainActivity extends AppCompatActivity{
             }
         });
     }
+    @Override
+    protected void onNightModeChanged(int mode) {
+        super.onNightModeChanged(mode);
+    }
 }
